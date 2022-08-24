@@ -1,65 +1,68 @@
-{"$schema": "https://developer.microsoft.com/json-schemas/sp/column-formatting.schema.json",
-"elmType": "div",
-"style":{
-"display":"flex",
-"flex-direction":"row"
-},
-"children":[{
-   
-    "elmType": "button",
-    "customRowAction": {
-      "action": "defaultClick"
-    },
-    "attributes": {
-      "class": "ms-fontColor-themePrimary ms-fontColor-themeDarker--hover"
-    },
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/sp/column-formatting.schema.json",
+    "elmType": "div",
     "style": {
-      "border": "none",
-      "background-color": "transparent",
-      "cursor": "pointer"
+        "display": "flex",
+        "flex-direction": "row"
     },
     "children": [
-      {
-        "elmType": "span",
-        "attributes": {
-          "iconName": "View"
+        {
+            "elmType": "button",
+            "customRowAction": {
+                "action": "defaultClick"
+            },
+            "attributes": {
+                "class": "ms-fontColor-themePrimary ms-fontColor-themeDarker--hover"
+            },
+            "style": {
+                "border": "none",
+                "background-color": "transparent",
+                "cursor": "pointer"
+            },
+            "children": [
+                {
+                    "elmType": "span",
+                    "attributes": {
+                        "iconName": "View"
+                    },
+                    "style": {
+                        "padding-right": "6px"
+                    }
+                },
+                {
+                    "elmType": "span",
+                    "txtContent": "View"
+                }
+            ]
         },
-        "style": {
-          "padding-right": "6px"
+        {
+            "elmType": "button",
+            "customRowAction": {
+                "action": "editProps"
+            },
+            "attributes": {
+                "class": "ms-fontColor-themePrimary ms-fontColor-themeDarker--hover"
+            },
+            "style": {
+                "border": "none",
+                "background-color": "transparent",
+                "cursor": "pointer"
+            },
+            "children": [
+                {
+                    "elmType": "span",
+                    "attributes": {
+                        "iconName": "Edit"
+                    },
+                    "style": {
+                        "padding-right": "6px"
+                    }
+                },
+                {
+                    "elmType": "span",
+                    "txtContent": "Edit"
+                }
+            ]
         }
-      },
-      {
-        "elmType": "span",
-        "txtContent": "View"
-      }
     ]
-  },
-  {   
-    "elmType": "button",
-    "customRowAction": {
-      "action": "editProps"
-    },
-    "attributes": {
-      "class": "ms-fontColor-themePrimary ms-fontColor-themeDarker--hover"
-    },
-    "style": {
-      "border": "none",
-      "background-color": "transparent",
-      "cursor": "pointer"
-    },
-    "children": [
-      {
-        "elmType": "span",
-        "attributes": {
-          "iconName": "Edit"
-        },
-        "style": {
-          "padding-right": "6px"
-        }
-      },
-      {
-        "elmType": "span",
-        "txtContent": "Edit"
-      }
-    ]
-  }]}
+}
